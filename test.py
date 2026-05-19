@@ -1,8 +1,8 @@
 import serial
 import time
 
-PORT = "/dev/ttyUSB1"
-BAUD_RATE = 1000000
+PORT = str(input('PORT: ')) #"/dev/ttyUSB1"
+BAUD_RATE = int(input('BAUD RATE: ')) # 1_000_000
 
 STARTUP_MESSAGE = "RR_SHIELD_READY"
 DONE_MESSAGE = "DONE"
